@@ -2,22 +2,22 @@
 //In these first 6 questions, replace `null` with the answer
 
 //create a string variable, it can contain anything
-let newString = null ;
+let newString = ' Hello my name is alex.' ;
 
 //create a number variable, it an be any number
-let newNum = null ;
+let newNum = 24 ;
 
 //create a boolean variable
-let newBool = null ;
+let newBool = true ;
 
 //solve the following math problem
-let newSubtract = 10 - null === 5;
+let newSubtract = 10 - 5 === 5;
 
 //Solve the following math problem
-let newMultiply = 10 * null === 40 ;
+let newMultiply = 10 * 4 === 40 ;
 
 //Solve the following math problem:
-let newModulo = 21 % 5 === null ;
+let newModulo = 21 % 5 === 1;
 
 
 
@@ -26,128 +26,236 @@ let newModulo = 21 % 5 === null ;
 //hint: console.log() will NOT work. 
 //Do not change any of the function names
 
-function returnString(str) {
-  //simply return the string provided: str
+function returnString(str) 
+{
+  return str; 
 }
 
-function add(x, y) {
-  // x and y are numbers
-  // add x and y together and return the value
-  // code here
+/////////////////////////////////////////////
+
+function add(x, y) 
+{
+    let sum = x + y; 
+    
+    return sum;
 }
 
-function subtract(x, y) {
-  // subtract y from x and return the value
-  // code here
+////////////////////////////////////////////
+
+function subtract(x, y) 
+{
+  let diffrence = x - y; 
+  
+  return diffrence; 
 }
 
-function multiply(x, y) {
-  // multiply x by y and return the value
-  // code here
+///////////////////////////////////////////
+
+function multiply(x, y) 
+{
+  let product = x * y;
+  
+  return product; 
 }
 
-function divide(x, y) {
-  // divide x by y and return the value
-  // code here
+////////////////////////////////////////
+function divide(x, y) 
+{
+  let quotient = x / y; 
+  
+  return quotient; 
 }
 
-function areEqual(x, y) {
-  // return true if x and y are the same
-  // otherwise return false
-  // code here
+///////////////////////////////////////
+
+function areEqual(x, y) 
+{
+   
+  if(x === y)
+  {
+     return true; 
+  }
+  
+  return false; 
 }
 
-function areSameLength(str1, str2) {
-  // return true if the two strings have the same length
-  // otherwise return false
-  // code here
-}
+///////////////////////////////////////
 
-function lessThanNinety(num) {
-  // return true if the function argument: num , is less than ninety
-  // otherwise return false
-  // code here
-}
 
-function greaterThanFifty(num) {
-  // return true if num is greater than fifty
-  // otherwise return false
-  // code here
+function areSameLength(str1, str2)
+ {
+    if(str1.length === str2.length)
+    {
+        return true; 
+    }
+    
+    return false; 
+     
 }
+/////////////////////////////////////////////////////////
 
-function getRemainder(x, y) {
-  // return the remainder from dividing x by y
-  // code here
+function lessThanNinety(num) 
+{
+    if(num < 90)
+    {
+       return true; 
+    }
+    
+    return false; 
 }
+//////////////////////////////////////////////////////////
 
-function isEven(num) {
+function greaterThanFifty(num) 
+{
+      if(num > 50)
+      {
+         return true; 
+      }
+      
+      return false; 
+}
+////////////////////////////////////////////////////////////
+
+function getRemainder(x, y) 
+{
+  return x % y; 
+}
+///////////////////////////////////////////////////////////
+
+function isEven(num)
+ {
+     if(num % 2 == 0)
+     {
+        return true; 
+     }
+     
+     return false; 
+     
   // return true if num is even
   // otherwise return false
   // code here
 }
-
-function isOdd(num) {
+///////////////////////////////////////////////////////////
+function isOdd(num) 
+{
+     if(num % 2 !== 0)
+     {
+         return true;
+     }
+     
+     return false; 
+     
   // return true if num is false
   // otherwise return false
   // code here
 }
+///////////////////////////////////////////////////////////////
+function square(num) 
+{
 
-function square(num) {
-  // square num and return the new value
-  // hint: NOT square root!
-  // code here
+  let squareNum = num * num; 
+   
+   return squareNum; 
+   
 }
-
-function cube(num) {
-  // cube num and return the new value
-  // code here
+///////////////////////////////////////////////////////////
+function cube(num) 
+{
+   let cubedNum = num * num * num; 
+   
+   return cubedNum;  
 }
+/////////////////////////////////////////////////////////////
+function raiseToPower(num, exponent) 
+{
 
-function raiseToPower(num, exponent) {
+    let raisedNum = Math.pow(num, exponent); 
+    
+    return raisedNum; 
+    
   // raise num to whatever power is passed in as exponent
   // code here
 }
-
-function roundNumber(num) {
-  // round num and return it
-  // code here
+/////////////////////////////////////////////////////////////
+function roundNumber(num) 
+{
+    let roundedNum = Math.round(num); 
+    
+    return roundedNum; 
+    
 }
-
-function roundUp(num) {
-  // round num up and return it
-  // code here
+//////////////////////////////////////////////////////////////
+function roundUp(num) 
+{
+     let roundedUp = Math.ceil(num); 
+ 
+     return roundedUp; 
+ 
+  
 }
-
-function addExclamationPoint(str) {
+////////////////////////////////////////////////////////////////
+function addExclamationPoint(str) 
+{
+    let newString = str + '!';
+    
+    return newString; 
+    
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
   // code here
 }
-
-function combineNames(firstName, lastName) {
+//////////////////////////////////////////////////////////////////////////
+function combineNames(firstName, lastName) 
+{
+   let combinedString = firstName + ' ' + lastName; 
+   
+   return combinedString; 
+   
   // return firstName and lastName combined as one string and separated by a space.
   // 'Lambda', 'School' -> 'Lambda School'
   // code here
 }
-
-function getGreeting(name) {
+/////////////////////////////////////////////////////////////////////////////
+function getGreeting(name)
+ {
+    let helloString = 'Hello'; 
+    let exclamationMark = '!' ;
+    
+    let concatString = helloString.concat(' ', name, exclamationMark );
+  
+  return concatString; 
+  
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
   // code here
 }
+/////////////////////////////////////////////////////////////////////////////////
+
 
 // The next three questions will have you implement math area formulas. 
 // If you can't remember these area formulas then head over to Google.
  
-function getRectangleArea(length, width) {
+function getRectangleArea(length, width) 
+{
+    let rectangleArea = length * width; 
+    
+    return rectangleArea; 
   // return the area of the rectangle by using length and width
   // code here
 }
+////////////////////////////////////////////////////////////////////////////
 
-function getTriangleArea(base, height) {
+function getTriangleArea(base, height) 
+{
+    let triangleArea = (base * height)/2;
+    
+    return triangleArea;
+    
   // return the area of the triangle by using base and height
   // code here
 }
+//////////////////////////////////////////////////////////////////////////
+
 
 // Do not modify code below this line.
 // --------------------------------
